@@ -1,14 +1,15 @@
 <template>
-    <div class="h-100 w-100 bg-gray-200 absolute z-0 flex flex-row">
-        <div class="h-120 w-20 bg-green-400">
-            <p>Anjay</p>
-        </div>
-        <div class="h-120 w-20 bg-blue-400">
-            <p>Wkwk</p>
-        </div>
-    </div>
+  <div class="w-full h-screen flex items-center justify-center">
+    <Sosmed class="group cursor-default">
+      
+    </Sosmed>
+  </div>
 </template>
 
-<script>
-
+<script setup>
+import Navbar from '@/components/componen-gede/navbar.vue'
+import DownloadCV from '@/components/printilan/DownloadCV.vue'
+import GetInTouch from '@/components/printilan/GetInTouch.vue'
+import NavItem from '@/components/printilan/NavItem.vue'
+import Sosmed from '@/components/printilan/Sosmed.vue'
 </script>
