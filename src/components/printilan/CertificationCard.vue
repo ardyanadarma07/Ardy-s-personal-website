@@ -6,7 +6,7 @@
     >
     <div>
         <h1 class="font-semibold text-lg font-poppins text-gelap">{{ title }}</h1>
-        <h2 class="font-regular text-xs text-gelap">{{ source }}</h2>
+        <h2 class="font-regular text-xs text-gelap">{{ penerbit }}</h2>
     </div>
     <a :href="linkSertifikat">
         <svg
@@ -32,7 +32,7 @@
 <script setup>
 defineProps({
   title: String,
-  source: String,
+  penerbit: String,
   linkSertifikat: String
 })
 </script>
