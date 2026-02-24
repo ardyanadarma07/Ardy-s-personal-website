@@ -1,13 +1,11 @@
 <style scoped>
-/* Menyembunyikan scrollbar untuk Chrome, Safari dan Opera */
 div::-webkit-scrollbar {
   display: none;
 }
 
-/* Menyembunyikan scrollbar untuk IE, Edge dan Firefox */
 div {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
 }
 </style>
 
@@ -49,7 +47,7 @@ div {
     </div>
 
     <!-- div education -->
-    <div v-else-if="activeTab === 'education'" class="flex flex-col gap-4">
+    <div v-else-if="activeTab === 'education'" class="flex flex-col gap-4 max-h-[348px] overflow-y-auto overflow-x-hidden pr-2">
       <EducationCard
       v-for="(item, index) in educationData"
       :key="index"
@@ -126,10 +124,10 @@ const educationData = [
     jurusan: 'S1 Informatika',
     tahunMulai: '2024',
     tahunSelesai: 'Sekarang',
-    logo: logoSMP
+    logo: logoUNUD
   },
   {
-    sekolah: 'SMA Negeri 1 Denpasar',
+    sekolah: 'SMA Negeri 2 Abiansemal',
     jurusan: 'MIPA',
     tahunMulai: '2021',
     tahunSelesai: '2024',
@@ -140,7 +138,7 @@ const educationData = [
     jurusan: 'Pelajar',
     tahunMulai: '2018',
     tahunSelesai: '2021',
-    logo: logoUNUD
+    logo: logoSMP
   },
 ]
 

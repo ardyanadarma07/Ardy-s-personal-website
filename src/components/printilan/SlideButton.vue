@@ -2,11 +2,11 @@
   <div class="flex w-fit h-fit gap-4">
     <!-- button kiri -->
     <button
-      class="w-20 h-20 rounded-full bg-base border-2 border-gelap justify-center items-center flex hover:bg-gelap transision-all duration-500 group"
+      class="w-16 h-16 rounded-full bg-base border-2 border-gelap justify-center items-center flex hover:bg-gelap transision-all duration-500 group"
     >
       <svg
-        width="18"
-        height="28"
+        width="14"
+        height="24"
         viewBox="0 0 18 28"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -20,11 +20,11 @@
     </button>
     <!-- button kanan -->
     <button
-      class="w-20 h-20 rounded-full bg-base border-2 border-gelap justify-center items-center flex hover:bg-gelap transision-all duration-500 group"
+      class="w-16 h-16 rounded-full bg-base border-2 border-gelap justify-center items-center flex hover:bg-gelap transision-all duration-500 group"
     >
       <svg
-        width="18"
-        height="28"
+        width="14"
+        height="24"
         viewBox="0 0 18 28"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

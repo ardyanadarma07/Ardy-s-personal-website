@@ -1,13 +1,13 @@
 <template>
   <div class="w-full min-h-screen">
     <!-- div Navbar + Nama-->
-    <div class="w-full h-fit flex justify-between pt-6 pr-4 pl-16">
+    <div class="w-full h-fit flex justify-between items-center pt-6 pr-4 pl-16">
       <h1 class="font-bold text-2xl font-poppins">Ardyana Darma</h1>
       <NavBar> </NavBar>
     </div>
 
     <!-- tombol naik -->
-      <button @click="scrollToTop" class="fixed bottom-10 right-10 z-50 w-16 h-16 rounded-full flex justify-center items-center bg-base border-2 border-gelap ">
+      <button @click="scrollToTop" class="fixed animate-bounce bottom-10 right-10 z-50 w-16 h-16 rounded-full flex justify-center items-center bg-base border-2 border-gelap ">
         <svg
           width="31"
           height="31"
@@ -29,15 +29,15 @@
       <Home></Home>
     </section>
 
-    <section id="about-me">
+    <section>
       <AboutMe></AboutMe>
     </section>
 
-    <section id="my-skill">
+    <section>
       <Tech></Tech>
     </section>
 
-    <section id="my-projects">
+    <section>
       <MyProjects></MyProjects>
     </section>
 
