@@ -1,7 +1,7 @@
 <template>
   <div class="flex w-fit h-fit gap-4">
     <!-- button kiri -->
-    <button
+    <button @click="slideLeft"
       class="w-16 h-16 rounded-full bg-base border-2 border-gelap justify-center items-center flex hover:bg-gelap transision-all duration-500 group"
     >
       <svg
@@ -19,7 +19,7 @@
       </svg>
     </button>
     <!-- button kanan -->
-    <button
+    <button @click="slideRight"
       class="w-16 h-16 rounded-full bg-base border-2 border-gelap justify-center items-center flex hover:bg-gelap transision-all duration-500 group"
     >
       <svg
@@ -40,4 +40,20 @@
 </template>
 
 <script setup>
+
+const slideLeft = () => {
+  const container = document.getElementById('project-scroll');
+  container.scrollBy({
+    left: -300,
+    behavior: 'smooth'
+  });
+};
+
+const slideRight = () => {
+  const container = document.getElementById('project-scroll');
+  container.scrollBy({
+    left: 300,
+    behavior: 'smooth'
+  });
+}
 </script>

@@ -3,6 +3,7 @@
     <h1 class="font-poppins text-white font-medium text-sm">{{ label }}</h1>
     
     <textarea 
+      v-model="model"
       :placeholder="placeholderInput" 
       rows="5"
       class="w-full px-4 py-3 border-2 border-gelap rounded-xl font-poppins focus:border-2 focus:border-birutua focus:outline-none placeholder:text-gelap placeholder:font-poppins resize-none"
@@ -11,6 +12,8 @@
 </template>
 
 <script setup>
+const model = defineModel()
+
 defineProps({
   label: String,
   placeholderInput: String

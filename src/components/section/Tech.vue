@@ -1,20 +1,30 @@
 <template>
-    <div  class="w-full min-h-screen bg-birumuda pt-16 pb-16 px-16 flex flex-col gap-6">
-      <!-- div tulisan -->
-       <div  id="my-skill"  class="flex flex-col gap-4 py-6">
-        <h1 class="font-poppins font-bold text-5xl text-gelap flex justify-center">Tools & <span class="pl-2 text-birutua"> Technologies</span></h1>
-        <p class="font-poppins text-gelap text-[16px] justify-center text-center">Bagian ini menampilkan teknologi dan tools yang saya gunakan untuk membangun sistem yang stabil, efisien, dan berfokus pada pengalaman pengguna, sehingga setiap solusi tidak hanya berfungsi dengan baik, tetapi juga nyaman digunakan.</p>
-       </div>
+  <div class="w-full min-h-screen bg-birumuda py-14 px-6 md:py-16 md:px-10 flex flex-col gap-8 md:gap-10">
+    
+    <div class="flex flex-col gap-4 md:gap-6 w-full" data-aos="fade-down" data-duration="1000">
+      <h1 class="font-poppins font-bold text-3xl md:text-5xl text-gelap flex flex-wrap justify-center text-center">
+        Tools & <span class="pl-2 text-birutua"> Technologies</span>
+      </h1>
+      
+      <p class="font-poppins text-gelap text-sm md:text-lg md:w-full text-justify md:text-center max-w-full mx-auto">
+        Bagian ini menampilkan teknologi dan tools yang saya gunakan untuk membangun sistem yang stabil, efisien, dan berfokus pada pengalaman pengguna, sehingga setiap solusi tidak hanya berfungsi dengan baik, tetapi juga nyaman digunakan.
+      </p>
+    </div>
 
-       <!-- div card skill -->
-        <div class="grid grid-cols-5 grid-rows-3 gap-y-10 place-items-center">
-            <SkillCard
-            v-for="(item, index) in techStackData"
-            :key="index"
-            :label="item.name"
-            :gambarLogo="item.logo"
-            />
-        </div>
+    <div class="flex flex-wrap justify-center gap-6 md:gap-10 mt-4 max-w-full">
+  <SkillCard
+    v-for="(item, index) in techStackData"
+    :key="index"
+    :label="item.name"
+    :gambarLogo="item.logo"
+    
+    class="hover:scale-105 transition-transform duration-300"
+    data-aos="zoom-in"
+    data-duration="1000"
+
+  />
+</div>
+
   </div>
 </template>
 
@@ -25,7 +35,6 @@ import logoJs from '@/assets/Tech/logo-javascript.png';
 import logoC from '@/assets/Tech/logo-c.png';
 import logoPython from '@/assets/Tech/logo-python.png';
 import logoVue from '@/assets/Tech/logo-vuejs.png';
-// import logoSql from '@/assets/Tech/logo-sql.png';
 import logoVsCode from '@/assets/Tech/logo-vscode.png';
 import logoLaragon from '@/assets/Tech/logo-laragon.png';
 import logoGithub from '@/assets/Tech/logo-github.png';
@@ -42,7 +51,6 @@ const techStackData = [
   { name: 'C', logo: logoC },
   { name: 'Python', logo: logoPython },
   { name: 'Vue.js', logo: logoVue },
-  // { name: 'SQL', logo: logoSql },
   { name: 'VS Code', logo: logoVsCode },
   { name: 'Laragon', logo: logoLaragon },
   { name: 'GitHub', logo: logoGithub },

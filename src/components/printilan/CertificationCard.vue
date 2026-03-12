@@ -1,17 +1,19 @@
 <template>
-  <div class="w-full h-fit flex gap-4 justify-center items-start">
-    <!-- div field -->
+  <div class="w-full h-fit flex justify-center items-start">
+    
     <div
-      class="flex  justify-between items-center border-2 border-gelap rounded-full w-full px-7 py-3 cursor-default"
+      class="flex justify-between items-center gap-3 border-2 border-gelap rounded-full md:rounded-full w-full px-6 py-4 md:px-7 md:py-3 cursor-default"
     >
-    <div>
-        <h1 class="font-semibold text-lg font-poppins text-gelap">{{ title }}</h1>
-        <h2 class="font-regular text-xs text-gelap">{{ penerbit }}</h2>
-    </div>
-    <a :href="linkSertifikat">
+      
+      <div class="flex flex-col">
+        <h1 class="font-semibold text-sm md:text-lg font-poppins text-gelap leading-tight">{{ title }}</h1>
+        
+        <h2 class="font-normal text-xs text-gelap mt-1 md:mt-0">{{ penerbit }}</h2>
+      </div>
+
+      <a :href="linkSertifikat" target="_blank" class="shrink-0 p-1 hover:scale-110 transition-transform duration-300">
         <svg
-          width="18"
-          height="18"
+          class="w-4 h-4 md:w-[18px] md:h-[18px]"
           viewBox="0 0 18 18"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +26,8 @@
             stroke-linejoin="round"
           />
         </svg>
-    </a>
+      </a>
+      
     </div>
   </div>
 </template>

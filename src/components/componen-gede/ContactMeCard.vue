@@ -2,7 +2,7 @@
   <div
     class="w-full h-fit group bg-gelap flex items-center gap-4 px-4 py-2 rounded-md border-2 border-transparent hover:border-2 hover:border-base transition-all duration-400 ease-out"
   >
-    <Sosmed class="transition-all ease-out duration-400">
+    <Sosmed class="transition-all ease-out duration-400 ">
         <slot></slot>
     </Sosmed>
     <div>

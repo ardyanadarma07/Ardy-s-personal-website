@@ -1,5 +1,5 @@
 <template>
-  <div class="group relative w-[148px] h-[170px] overflow-hidden cursor-default animate-pulse">
+  <div class="group relative w-[148px] h-[170px] overflow-hidden cursor-default">
     <!-- div bawah -->
     <div class="absolute inset-0 w-36 h-[164px] ml-1 mt-1 rounded-md bg-gelap border-2 border-gelap z-10 transition-colors duration-500">
 

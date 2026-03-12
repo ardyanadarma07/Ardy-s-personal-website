@@ -1,18 +1,18 @@
 <template>
     <!-- div utama -->
-  <div class="group relative w-[242px] h-20 overflow-hidden cursor-pointer">
+  <div class="group relative w-[172px] h-[68px] md:w-[242px] md:h-20 overflow-hidden cursor-pointer">
     <!-- div bawah -->
     <div
-      class="absolute inset-0 w-[232px] h-[60px] ml-[10px] mt-[10px] bg-birumuda group-hover:bg-gelap border-2 border-gelap z-10 transition-colors duration-500"
+      class="absolute inset-0 w-[160px] h-[56px] md:w-[232px] md:h-[60px] ml-[10px] mt-[10px] bg-birumuda group-hover:bg-gelap border-2 border-gelap z-10 transition-colors duration-500"
     ></div>
 
     <!-- div atas -->
     <div
-      class="absolute inset-0 w-[232px] h-[60px] bg-gelap group-hover:bg-birumuda border-2 border-transparent group-hover:border-gelap z-20 flex items-center justify-center transition-all duration-500"
+      class="absolute inset-0 w-[160px] h-[56px] md:w-[232px] md:h-[60px] bg-gelap group-hover:bg-birumuda border-2 border-transparent group-hover:border-gelap z-20 flex items-center justify-center transition-all duration-500"
     >
         <!-- div tulisan dan svg -->
       <div class="flex items-center gap-2">
-        <h2 class="text-2xl font-bold text-white group-hover:text-gelap transition-colors duration-500 font-poppins">
+        <h2 class="text-base md:text-2xl font-bold text-white group-hover:text-gelap transition-colors duration-500 font-poppins">
           Get In Touch
         </h2>
         
